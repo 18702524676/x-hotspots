@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="赛道情报 2026-10-15：AI 古诗词/历史/聊斋动画以 4 个独立案例互证居本期 TOP1，共收录 19 条 AI 自媒体案例。">
+<title>赛道情报 · 2026-10-15</title>
+<style>
+:root {
+  --paper: #f2e9d8;
+  --paper-deep: #eaddc4;
+  --ink: #211a13;
+  --ink-soft: #6d5f4c;
+  --red: #c8351f;
+  --red-deep: #9a2412;
+  --yellow: #f0b323;
+  --yellow-soft: #f8d878;
+  --card: #f9f2e4;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--paper);
+  background-image: radial-gradient(rgba(33,26,19,.05) 1px, transparent 1px);
+  background-size: 22px 22px;
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+a { color: inherit; }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 20px 14px 48px; }
+
+/* header */
+header { border-bottom: 3px solid var(--ink); padding-bottom: 18px; }
+.kicker { display: inline-block; background: var(--red); color: #fff7ea; font-weight: 800; font-size: 12px; letter-spacing: .22em; padding: 4px 10px; }
+h1 { font-size: 34px; line-height: 1.15; font-weight: 900; letter-spacing: .01em; margin: 12px 0 4px; }
+h1 .mark { color: var(--red); box-shadow: inset 0 -.28em 0 var(--yellow-soft); }
+.window { font-size: 13px; font-weight: 700; color: var(--ink-soft); letter-spacing: .06em; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 16px; }
+.stat { background: var(--card); border: 1.5px solid var(--ink); padding: 10px 12px; box-shadow: 3px 3px 0 var(--ink); }
+.stat b { display: block; font-size: 26px; font-weight: 900; color: var(--red); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12px; font-weight: 700; color: var(--ink-soft); }
+.meta-line { margin-top: 12px; font-size: 12px; color: var(--ink-soft); }
+
+/* section titles */
+.sec-title { display: flex; align-items: baseline; gap: 10px; margin: 34px 0 6px; border-bottom: 2px solid var(--ink); padding-bottom: 8px; }
+.sec-title h2 { font-size: 22px; font-weight: 900; }
+.sec-title .tick { background: var(--yellow); color: var(--ink); font-size: 11px; font-weight: 800; letter-spacing: .14em; padding: 3px 8px; }
+.sec-sub { font-size: 12px; color: var(--ink-soft); margin-bottom: 14px; }
+
+/* hero cards */
+.heros { display: grid; gap: 14px; margin-top: 16px; }
+.hero { position: relative; background: var(--ink); color: #f6efe1; border: 2px solid var(--ink); padding: 18px 16px 16px; overflow: hidden; }
+.hero::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--red); }
+.hero-rank { font-size: 11px; font-weight: 900; letter-spacing: .24em; color: var(--yellow); }
+.hero-num { font-size: 46px; font-weight: 900; line-height: 1.05; color: var(--yellow); letter-spacing: -.02em; margin: 6px 0 4px; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hero-title { font-size: 19px; font-weight: 900; margin-bottom: 6px; }
+.hero-why { font-size: 13px; color: #d8cdb8; }
+.hero-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.hl-chip { font-size: 12px; font-weight: 700; text-decoration: none; border: 1px solid #6d5f4c; color: var(--yellow-soft); padding: 3px 10px; border-radius: 999px; }
+
+/* groups & cards */
+.group { margin-top: 26px; }
+.group-head { display: flex; align-items: center; gap: 8px; border-left: 6px solid var(--yellow); padding-left: 10px; margin-bottom: 12px; }
+.group-head h2 { font-size: 16px; font-weight: 900; }
+.gcount { margin-left: auto; background: var(--red); color: #fff7ea; font-size: 11px; font-weight: 800; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+.list { display: grid; gap: 12px; }
+.card { background: var(--card); border: 1.5px solid var(--ink); padding: 14px; box-shadow: 3px 3px 0 var(--paper-deep); }
+.c-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.niche { background: var(--ink); color: #f6efe1; font-size: 12px; font-weight: 800; padding: 3px 9px; }
+.plat { font-size: 12px; font-weight: 700; color: var(--ink-soft); }
+.diff { margin-left: auto; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.d-lo { background: #e3f1d8; color: #38691e; border: 1px solid #86b06a; }
+.d-md { background: var(--yellow-soft); color: #7a5300; border: 1px solid #d9a52a; }
+.d-hi { background: #f6d9cf; color: #9a2412; border: 1px solid #d0775c; }
+.metric { font-size: 30px; font-weight: 900; color: var(--red); line-height: 1.15; letter-spacing: -.01em; margin: 10px 0 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.note { font-size: 12.5px; color: var(--ink-soft); }
+.kv { display: flex; gap: 8px; margin-top: 10px; font-size: 13px; }
+.kv .k { flex: none; background: var(--paper-deep); color: var(--red-deep); font-size: 11px; font-weight: 900; padding: 1px 7px; height: fit-content; margin-top: 2px; border: 1px solid #d3c19c; }
+.kv .v { color: var(--ink); }
+.kv.opp { border-top: 1px dashed #cdbfa3; padding-top: 10px; }
+.kv.opp .k { background: var(--yellow); color: var(--ink); border-color: #d9a52a; }
+.c-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; border-top: 1px solid #dccfae; padding-top: 10px; }
+.src { font-size: 13px; font-weight: 800; color: var(--red); text-decoration: none; border-bottom: 1.5px solid var(--yellow); padding-bottom: 1px; }
+.date { font-size: 11px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+/* footer */
+.limits { margin-top: 34px; background: var(--paper-deep); border: 1.5px dashed var(--ink-soft); padding: 14px 16px; }
+.limits h2 { font-size: 13px; font-weight: 900; letter-spacing: .12em; color: var(--red-deep); margin-bottom: 6px; }
+.limits ul { list-style: none; }
+.limits li { font-size: 12.5px; color: var(--ink-soft); padding: 3px 0 3px 16px; position: relative; }
+.limits li::before { content: "—"; position: absolute; left: 0; color: var(--red); }
+footer { margin-top: 18px; font-size: 11px; color: var(--ink-soft); }
+
+/* >= 640px */
+@media (min-width: 640px) {
+  .wrap { padding: 30px 22px 60px; }
+  h1 { font-size: 48px; }
+  .stats { grid-template-columns: repeat(6, 1fr); }
+  .stat b { font-size: 30px; }
+  .heros { grid-template-columns: repeat(3, 1fr); }
+  .hero { display: flex; flex-direction: column; }
+  .hero-num { font-size: 38px; }
+  .hero-why { flex: 1; }
+  .list { grid-template-columns: repeat(2, 1fr); }
+}
+/* >= 960px */
+@media (min-width: 960px) {
+  .hero-num { font-size: 44px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="kicker">赛道情报 · 2026-10-15</span>
+  <h1>AI 自媒体<span class="mark">赛道情报</span></h1>
+  <div class="window">情报窗口 ｜ 2026-10-08 ~ 10-15</div>
+  <div class="stats">
+    <div class="stat"><b>19</b><span>收录案例</span></div>
+    <div class="stat"><b>5</b><span>低难度可上手</span></div>
+    <div class="stat"><b>6</b><span>细分赛道</span></div>
+    <div class="stat"><b>11</b><span>抖音案例</span></div>
+    <div class="stat"><b>5</b><span>YouTube 案例</span></div>
+    <div class="stat"><b>3</b><span>其他平台</span></div>
+  </div>
+  <div class="meta-line">数据来源：X (search_posts_all) ｜ 全部 19 条原帖链接见下方</div>
+</header>
+
+<section>
+  <div class="sec-title"><h2>本期 TOP 3</h2><span class="tick">最值得复刻</span></div>
+  <p class="sec-sub">按互证案例数与变现完整度排序 · 数字均取自对应原帖指标</p>
+  <div class="heros"><article class="hero">
+  <div class="hero-rank">TOP 1</div>
+  <div class="hero-num">26.2万粉</div>
+  <h3 class="hero-title">AI 古诗词/历史/聊斋动画</h3>
+  <p class="hero-why">4 个独立案例互证：20w+、26.2w、2个月+20w；工具链公开（DeepSeek+海螺+剪映），半小时一条</p>
+  <div class="hero-links"><a class="hl-chip" href="https://x.com/jackzhang123vip/status/2110207277324189835" target="_blank" rel="noopener" >@jackzhang123vip ↗</a><a class="hl-chip" href="https://x.com/Missle8z/status/2103677437360095304" target="_blank" rel="noopener" >@Missle8z ↗</a><a class="hl-chip" href="https://x.com/JunCoi7d/status/2108033601673769093" target="_blank" rel="noopener" >@JunCoi7d ↗</a></div>
+</article><article class="hero">
+  <div class="hero-rank">TOP 2</div>
+  <div class="hero-num">6天 +3w粉</div>
+  <h3 class="hero-title">热门文案 Vibe 动效</h3>
+  <p class="hero-why">6天12条涨近3w粉，零配音零出镜，复刻难度最低，正值红利期</p>
+  <div class="hero-links"><a class="hl-chip" href="https://x.com/CrazyKaomei/status/2110554196953170106" target="_blank" rel="noopener" >@CrazyKaomei ↗</a></div>
+</article><article class="hero">
+  <div class="hero-rank">TOP 3</div>
+  <div class="hero-num">186.7万粉</div>
+  <h3 class="hero-title">AI 儿童英语绘本 + 虚拟品</h3>
+  <p class="hero-why">186.7万粉+小店 4600 单，粉丝精准（宝妈），变现路径最完整</p>
+  <div class="hero-links"><a class="hl-chip" href="https://x.com/AndyL5cc/status/2109849190952222830" target="_blank" rel="noopener" >@AndyL5cc ↗</a></div>
+</article></div>
+</section>
+
+<section>
+  <div class="sec-title"><h2>案例库 · 国内</h2><span class="tick">13 例</span></div>
+  <section class="group"><div class="group-head"><h2>国内 · 玩法·自动化运营</h2><span class="gcount">1 例</span></div><div class="list"><article class="card">
+  <div class="c-top"><span class="niche">游戏小赛道自动化</span><span class="plat">短视频</span><span class="diff d-hi">高难度</span></div>
+  <div class="metric">200万播放</div>
+  <div class="note">国庆试水，赛道头部仅几万粉</div>
+  <div class="kv"><span class="k">做法</span><span class="v">AI 在 Mac mini 上全自动运营（非 AI 生成视频）</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">自动化流水线可多号复制</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/NintendoDoomed/status/2108096897886142868" target="_blank" rel="noopener" >@NintendoDoomed ↗</a><span class="date">2026-10-08</span></div>
+</article></div></section><section class="group"><div class="group-head"><h2>国内 · 知识·教育科普</h2><span class="gcount">5 例</span></div><div class="list"><article class="card">
+  <div class="c-top"><span class="niche">儿童英语绘本</span><span class="plat">抖音</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">186.7万粉</div>
+  <div class="note">285 条视频；小店虚拟产品半年 4600 单，单月营收过万（转述）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">AI 生成儿童英语绘本视频 → 宝妈精准粉 → 小店卖数字产品</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">宝妈刚需+虚拟品零库存，可做分级/主题绘本矩阵</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/AndyL5cc/status/2109849190952222830" target="_blank" rel="noopener" >@AndyL5cc ↗</a><span class="date">2026-10-13</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">儿童英语绘本</span><span class="plat">抖音</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">186.7万粉</div>
+  <div class="note">「陪娃学英语」2025年7月底才开始更新，每条吸几千宝妈粉</div>
+  <div class="kv"><span class="k">做法</span><span class="v">AI 儿童英语绘本视频</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">同上，另可移植到小红书/视频号</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/taozi0929/status/2110288751390064742" target="_blank" rel="noopener" >@taozi0929 ↗</a><span class="date">2026-10-14</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">中药科普</span><span class="plat">抖音</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">35.8W粉</div>
+  <div class="note">分成计划+橱窗带货，累计变现超 10W</div>
+  <div class="kv"><span class="k">做法</span><span class="v">AI 生成中药类视频</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">养生人群购买力强，适合橱窗</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/Georgep64572734/status/2109225243575222295" target="_blank" rel="noopener" >@Georgep64572734 ↗</a><span class="date">2026-10-11</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">宇宙哲学短片</span><span class="plat">抖音</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">2天 +4.5万粉</div>
+  <div class="note">两个账号「电子智人」「lwanau」合计（据截图）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">画面+配乐全由 Claude 生成，117 秒短片</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">情绪/哲思内容完播高，可系列化</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/AI_DVD6/status/2108931012105290217" target="_blank" rel="noopener" >@AI_DVD6 ↗</a><span class="date">2026-10-10</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">抽象科普动画</span><span class="plat">抖音</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">单条 1.4万赞</div>
+  <div class="note">账号 1.2 万粉（儿科医生）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">AI 动态图形讲熵增、病毒周期</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">专业人士+AI 视觉=高级感科普，全行业可抄</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/BuildWithAINo1/status/2109842621854327034" target="_blank" rel="noopener" >@BuildWithAINo1 ↗</a><span class="date">2026-10-13</span></div>
+</article></div></section><section class="group"><div class="group-head"><h2>国内 · 故事·古风历史动画</h2><span class="gcount">5 例</span></div><div class="list"><article class="card">
+  <div class="c-top"><span class="niche">古风动画·聊斋/寓言</span><span class="plat">抖音</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">26.2万粉</div>
+  <div class="note">仅 12 个作品，单条 170万+ 赞（9/26 帖，作参考）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">AI 聊斋动画故事</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">细分：聊斋/寓言/民间故事/历史怪谈</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/Missle8z/status/2103677437360095304" target="_blank" rel="noopener" >@Missle8z ↗</a><span class="date">2026-09-26</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">历史素材</span><span class="plat">抖音</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">20万+粉</div>
+  <div class="note">十几个视频，每个几万赞</div>
+  <div class="kv"><span class="k">做法</span><span class="v">AI 生成历史素材；Claude 几分钟复刻同款</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">历史题材供给无限，可日更批量</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/jackzhang123vip/status/2110207277324189835" target="_blank" rel="noopener" >@jackzhang123vip ↗</a><span class="date">2026-10-14</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">悬疑猎奇</span><span class="plat">短视频</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">单条变现 500+</div>
+  <div class="note">作者称条条小爆款，起号快（含引流链接）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">全部 AI 制作</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">槽点多易起量；注意帖子带课程推广</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/wenJustin666/status/2108226405586919682" target="_blank" rel="noopener" >@wenJustin666 ↗</a><span class="date">2026-10-08</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">古诗词动画</span><span class="plat">抖音/短视频</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">2个月 +20w粉</div>
+  <div class="note">李白送别等电影级画面</div>
+  <div class="kv"><span class="k">做法</span><span class="v">DeepSeek 写提示词 → 海螺AI 生成 → 剪映加毛笔字幕，熟练半小时一条</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">教材古诗全覆盖，可接教辅带货</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/JunCoi7d/status/2108033601673769093" target="_blank" rel="noopener" >@JunCoi7d ↗</a><span class="date">2026-10-08</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">古风动画·聊斋/寓言</span><span class="plat">抖音</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">起号飞快</div>
+  <div class="note">作者称爆款与涨粉数据都非常好（未给具体数字）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">AI 传统寓言故事动画</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">寓言=亲子+教育双受众</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/Missle8z/status/2109929568668909968" target="_blank" rel="noopener" >@Missle8z ↗</a><span class="date">2026-10-13</span></div>
+</article></div></section><section class="group"><div class="group-head"><h2>国内 · 视觉·轻内容</h2><span class="gcount">2 例</span></div><div class="list"><article class="card">
+  <div class="c-top"><span class="niche">AI 画布图文/视频</span><span class="plat">抖音</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">8k+粉</div>
+  <div class="note">已靠广告+橱窗变现</div>
+  <div class="kv"><span class="k">做法</span><span class="v">一个 AI 画布产出图片和视频</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">低粉即可接广，验证快</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/369Serena/status/2108394256096166188" target="_blank" rel="noopener" >@369Serena ↗</a><span class="date">2026-10-09</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">热门文案动效</span><span class="plat">抖音</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">6天 +3w粉</div>
+  <div class="note">12 条内容，无配音，仅背景音乐</div>
+  <div class="kv"><span class="k">做法</span><span class="v">热门文案用 Vibe 动效重做</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">零配音零出镜，工具门槛最低，红利窗口期</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/CrazyKaomei/status/2110554196953170106" target="_blank" rel="noopener" >@CrazyKaomei ↗</a><span class="date">2026-10-15</span></div>
+</article></div></section>
+</section>
+
+<section>
+  <div class="sec-title"><h2>案例库 · 海外</h2><span class="tick">6 例</span></div>
+  <section class="group"><div class="group-head"><h2>海外 · 故事·古风历史动画</h2><span class="gcount">2 例</span></div><div class="list"><article class="card">
+  <div class="c-top"><span class="niche">西部故事</span><span class="plat">YouTube</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">~240万播放/月</div>
+  <div class="note">9/7 首发，不到一个月</div>
+  <div class="kv"><span class="k">做法</span><span class="v">无脸 Wild West 频道</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">怀旧题材+AI 画面，成本极低</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/thegoldeenhand/status/2108608971955458404" target="_blank" rel="noopener" >@thegoldeenhand ↗</a><span class="date">2026-10-09</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">古文明纪录片</span><span class="plat">YouTube</span><span class="diff d-hi">高难度</span></div>
+  <div class="metric">673K 订阅</div>
+  <div class="note">Secret Origins，386 个视频，高 RPM</div>
+  <div class="kv"><span class="k">做法</span><span class="v">古文明/神秘历史纪录</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">长内容需脚本功力，但 RPM 高</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/Mdbilal75/status/2110320890860720239" target="_blank" rel="noopener" >@Mdbilal75 ↗</a><span class="date">2026-10-14</span></div>
+</article></div></section><section class="group"><div class="group-head"><h2>海外 · 变现·虚拟人订阅</h2><span class="gcount">1 例</span></div><div class="list"><article class="card">
+  <div class="c-top"><span class="niche">AI 虚拟美女</span><span class="plat">TikTok→Fanvue</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">2周 85万日元</div>
+  <div class="note">TikTok 5天涨 5万粉，562 人 × $9.99/月订阅（转述）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">Claude 生成舞蹈视频引流，Fanvue 付费订阅</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">高变现但平台/合规风险大，谨慎</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/AIExplorerTim/status/2109510680118481148" target="_blank" rel="noopener" >@AIExplorerTim ↗</a><span class="date">2026-10-12</span></div>
+</article></div></section><section class="group"><div class="group-head"><h2>海外 · 变现·海外无脸频道</h2><span class="gcount">3 例</span></div><div class="list"><article class="card">
+  <div class="c-top"><span class="niche">AI 角色短片</span><span class="plat">YouTube</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">$20K+/月</div>
+  <div class="note">单条 2200万/1200万/1100万播放（Robo Reels）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">简单 AI 角色视频，无口播</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">角色 IP 化，可跨平台分发</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/LaboniIsla129/status/2108903128578011182" target="_blank" rel="noopener" >@LaboniIsla129 ↗</a><span class="date">2026-10-10</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">法庭案件解说</span><span class="plat">YouTube</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">30天 $17K</div>
+  <div class="note">7月开号 27 条，63.8K 订阅，30天 387万播放，RPM $4.49</div>
+  <div class="kv"><span class="k">做法</span><span class="v">无脸 court case 频道</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">长视频高 RPM，中文可做「庭审/判例」</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/grundstromleo/status/2110438711758319960" target="_blank" rel="noopener" >@grundstromleo ↗</a><span class="date">2026-10-14</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">无脸长视频</span><span class="plat">YouTube</span><span class="diff d-md">中难度</span></div>
+  <div class="metric">单条 $4.1k</div>
+  <div class="note">657k 播放，RPM $6.38（reportedly）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">无脸 YouTube 视频</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">单爆款即可回本；YPP 门槛 2027/2 将翻倍，趁早</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/frontm_an/status/2110363505584988214" target="_blank" rel="noopener" >@frontm_an ↗</a><span class="date">2026-10-14</span></div>
+</article></div></section>
+</section>
+
+<section>
+  <div class="sec-title"><h2>低难度 · 快速起号</h2><span class="tick">5 例</span></div>
+  <p class="sec-sub">上手门槛最低的 5 条，跨平台交叉索引（与上方案例库重复列出）</p>
+  <section class="group"><div class="group-head"><h2>低难度 · 快速起号</h2><span class="gcount">5 例</span></div><div class="list"><article class="card">
+  <div class="c-top"><span class="niche">历史素材</span><span class="plat">抖音</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">20万+粉</div>
+  <div class="note">十几个视频，每个几万赞</div>
+  <div class="kv"><span class="k">做法</span><span class="v">AI 生成历史素材；Claude 几分钟复刻同款</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">历史题材供给无限，可日更批量</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/jackzhang123vip/status/2110207277324189835" target="_blank" rel="noopener" >@jackzhang123vip ↗</a><span class="date">2026-10-14</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">AI 画布图文/视频</span><span class="plat">抖音</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">8k+粉</div>
+  <div class="note">已靠广告+橱窗变现</div>
+  <div class="kv"><span class="k">做法</span><span class="v">一个 AI 画布产出图片和视频</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">低粉即可接广，验证快</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/369Serena/status/2108394256096166188" target="_blank" rel="noopener" >@369Serena ↗</a><span class="date">2026-10-09</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">悬疑猎奇</span><span class="plat">短视频</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">单条变现 500+</div>
+  <div class="note">作者称条条小爆款，起号快（含引流链接）</div>
+  <div class="kv"><span class="k">做法</span><span class="v">全部 AI 制作</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">槽点多易起量；注意帖子带课程推广</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/wenJustin666/status/2108226405586919682" target="_blank" rel="noopener" >@wenJustin666 ↗</a><span class="date">2026-10-08</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">热门文案动效</span><span class="plat">抖音</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">6天 +3w粉</div>
+  <div class="note">12 条内容，无配音，仅背景音乐</div>
+  <div class="kv"><span class="k">做法</span><span class="v">热门文案用 Vibe 动效重做</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">零配音零出镜，工具门槛最低，红利窗口期</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/CrazyKaomei/status/2110554196953170106" target="_blank" rel="noopener" >@CrazyKaomei ↗</a><span class="date">2026-10-15</span></div>
+</article><article class="card">
+  <div class="c-top"><span class="niche">古诗词动画</span><span class="plat">抖音/短视频</span><span class="diff d-lo">低难度 · 易上手</span></div>
+  <div class="metric">2个月 +20w粉</div>
+  <div class="note">李白送别等电影级画面</div>
+  <div class="kv"><span class="k">做法</span><span class="v">DeepSeek 写提示词 → 海螺AI 生成 → 剪映加毛笔字幕，熟练半小时一条</span></div>
+  <div class="kv opp"><span class="k">机会</span><span class="v">教材古诗全覆盖，可接教辅带货</span></div>
+  <div class="c-foot"><a class="src author" href="https://x.com/JunCoi7d/status/2108033601673769093" target="_blank" rel="noopener" >@JunCoi7d ↗</a><span class="date">2026-10-08</span></div>
+</article></div></section>
+</section>
+
+<div class="limits">
+  <h2>数据限制</h2>
+  <ul><li>Reddit 公共 JSON 对本机返回 Blocked 页面，本期无 Reddit 数据</li><li>数字均为原帖作者陈述/转述，未经核实</li></ul>
+</div>
+<footer>本页全部数据来自 AI 自媒体赛道情报 2026-10-15 期原始输入，未做任何加工。</footer>
+
+</div>
+</body>
+</html>
