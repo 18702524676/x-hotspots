@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="赛道 × 风格匹配分析：21 条赛道匹配、7 个新蓝海赛道、优先前 3 名（2026-10-16）">
+<title>赛道 × 风格匹配分析 · 2026-10-16</title>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#faf8f3; --bg2:#ffffff; --bg3:#f2efe7;
+  --ink:#1f2328; --soft:#52595f; --mute:#6d7480;
+  --rule:#e2dccd; --rule2:#eae5db;
+  --ac:#2f7d5b; --acbg:#eaf4ef; --acbd:#c2dccd;
+  --warn:#b26a1f; --warnbg:#faf0df; --warnbd:#e8cfa8;
+  --card-shadow:0 1px 2px rgba(31,35,40,.05),0 6px 18px rgba(31,35,40,.05);
+  --serif:"Songti SC","Noto Serif SC","Source Han Serif SC","STSong",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17.5px/1.75 var(--sans);font-feature-settings:"palt";-webkit-font-smoothing:antialiased}
+.w{max-width:1080px;margin:0 auto;padding:0 clamp(16px,5vw,56px)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif)}
+
+/* masthead */
+.mast{border-bottom:3px double var(--rule);padding:26px 0 22px}
+.mrow{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);border-bottom:1px solid var(--rule);padding-bottom:10px}
+.mast h1{font-size:clamp(34px,9vw,56px);line-height:1.15;margin:20px 0 10px;text-align:center;font-weight:700}
+.mast h1 i{font-style:normal;color:var(--ac)}
+.tag{font-size:16px;color:var(--soft);text-align:center;margin:0 auto;max-width:36em;letter-spacing:.04em;line-height:1.75}
+.tag b{color:var(--ink);font-weight:600}
+
+/* section heading */
+.sec{display:flex;align-items:center;gap:14px;margin:46px 0 18px;font:600 13.5px/1.4 var(--sans);letter-spacing:.24em;color:var(--soft)}
+.sec:after{content:"";flex:1;height:1px;background:var(--rule)}
+.secnum{font-family:var(--serif);color:var(--ac);letter-spacing:.1em}
+.secn{margin:0 0 16px;font-size:15px;line-height:1.75;color:var(--mute)}
+.secn .chip{margin-right:6px}
+
+/* chips */
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:14px;line-height:1;border-radius:999px;padding:5px 12px;white-space:nowrap}
+.chip.yi{color:var(--ac);border:1px solid var(--acbd);background:var(--acbg)}
+.chip.duan{color:var(--warn);border:1px solid var(--warnbd);background:var(--warnbg)}
+.chip.gray{color:var(--mute);border:1px solid var(--rule);background:var(--bg3)}
+.chip.big{font-size:15px;padding:6px 14px}
+
+/* top3 big cards */
+.top3{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:16px}
+.tp{background:var(--bg2);border:1px solid var(--rule2);border-radius:14px;padding:22px 20px 20px;display:flex;flex-direction:column;gap:11px;box-shadow:var(--card-shadow)}
+.tp .rk{font:400 14px/1.4 var(--serif);color:var(--mute);letter-spacing:.1em}
+.tp .rk b{font-weight:400;font-size:40px;line-height:1;color:var(--ac);margin-right:8px;font-family:var(--serif)}
+.tp .lbl{font-size:13px;font-weight:600;letter-spacing:.18em;color:var(--ac)}
+.tp h2{font-size:25px;line-height:1.4;margin:2px 0 0;font-weight:700}
+.tp p{margin:0;color:var(--soft);font-size:17px;line-height:1.75}
+.tp .refs{font-size:15px;color:var(--mute);line-height:1.7}
+
+/* match cards */
+.cases{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:16px}
+.cd{background:var(--bg2);border:1px solid var(--rule2);border-radius:14px;padding:20px 18px 16px;box-shadow:var(--card-shadow)}
+.ch{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:14px;color:var(--mute)}
+.cd h3{font-size:23px;line-height:1.4;margin:10px 0 8px;font-weight:700}
+.sty{margin:0 0 12px;font-size:17.5px;line-height:1.75;color:var(--ink)}
+.sty .alt{color:var(--soft)}
+.rsn{margin:0;padding-top:12px;border-top:1px dashed var(--rule);font-size:16.5px;line-height:1.75;color:var(--soft)}
+.rsn em{font-style:normal;color:var(--mute);letter-spacing:.08em;font-size:13px;font-weight:600;margin-right:6px}
+.cd.risk{border-color:var(--warnbd);background:linear-gradient(180deg,var(--warnbg),var(--bg2) 60%)}
+.cd.risk h3{color:var(--warn)}
+.tagline-risk{display:inline-block;font-size:14px;font-weight:600;color:var(--warn);border:1px solid var(--warnbd);border-radius:999px;padding:5px 12px;background:var(--warnbg)}
+
+/* blue-ocean cards */
+.blues{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:16px}
+.bo{background:var(--bg2);border:1px solid var(--rule2);border-radius:14px;padding:22px 18px 18px;box-shadow:var(--card-shadow)}
+.bo .no{font:400 13.5px/1.4 var(--serif);color:var(--mute);letter-spacing:.2em}
+.bo h3{font-size:24px;line-height:1.45;margin:10px 0 14px;font-weight:700}
+.kv{margin:0;display:grid;gap:12px}
+.kv>div{display:grid;grid-template-columns:5.6em minmax(0,1fr);gap:10px;font-size:17px;line-height:1.75}
+.kv dt{color:var(--mute);font-size:14px;letter-spacing:.08em;padding-top:4px}
+.kv dd{margin:0;color:var(--soft);min-width:0;overflow-wrap:break-word}
+.kv .boInk dd{color:var(--ink)}
+.kv .ev dt{color:var(--ac)}
+.src{font-size:15.5px;font-weight:600;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:5px;border-bottom:1px solid var(--rule);padding-bottom:1px}
+.src:hover{color:var(--ac);border-color:var(--ac)}
+.src svg{width:11px;height:11px;fill:none;stroke:currentColor;stroke-width:1.4;flex:none}
+.nf{color:var(--warn);font-weight:600}
+.ep{color:var(--ink)}
+.deal{margin-top:14px;padding-top:12px;border-top:1px dashed var(--rule);font-size:16px;line-height:1.75;color:var(--soft)}
+.deal b{color:var(--ink);font-weight:600}
+
+/* notes / limits */
+.lim{margin:0;padding:20px 18px;border:1px solid var(--rule2);border-left:3px solid var(--warn);border-radius:12px;font-size:16.5px;line-height:1.75;color:var(--soft);background:var(--bg2);box-shadow:var(--card-shadow)}
+.lim b{color:var(--ink);font-weight:600}
+.lim ul{margin:8px 0 0;padding-left:20px}
+.lim li{margin:5px 0}
+.lim .chip{vertical-align:1px}
+
+.foot{border-top:3px double var(--rule);margin-top:46px;padding:18px 0 44px;font-size:14.5px;color:var(--mute);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+
+@media(min-width:760px){
+  .top3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cases{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .blues{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mast h1{font-size:clamp(44px,6vw,76px)}
+}
+@media(max-width:400px){
+  .kv>div{grid-template-columns:1fr;gap:2px}
+  .kv dt{padding-top:0}
+}
+</style>
+</head>
+<body>
+<div class="w">
+
+<header class="mast">
+  <div class="mrow">
+    <span>Niche × Style Match</span>
+    <time datetime="2026-10-16">2026.10.16</time>
+  </div>
+  <h1>赛道<i>×</i>风格匹配分析</h1>
+  <p class="tag">21 条赛道风格匹配 · 7 个新蓝海赛道 · 优先前 3 名 —— 机器人简称：<b>【艺】= 艺术动画解说</b> · <b>【短】= 短片制作</b> · <b>★ = 有现成样片</b></p>
+</header>
+
+<main>
+
+<!-- ============ 一、建议先做的 3 个方向 ============ -->
+<h2 class="sec"><span class="secnum">壹</span>建议先做的 3 个方向</h2>
+<ol class="top3">
+  <li class="tp">
+    <span class="rk"><b>01</b>PRIORITY</span>
+    <span class="lbl">蓝海赛道 · 一</span>
+    <h2>聊斋水墨志怪</h2>
+    <p>证据最强（59.4 万粉帖子、《非妖哉》近 50 万粉），夜景鬼影契合机器人强项，题材库海量。</p>
+    <span class="refs">风格：中国水墨 + 角色闯关剧情【艺】 · 备选中国水墨【短】 · 需新做样片</span>
+  </li>
+  <li class="tp">
+    <span class="rk"><b>02</b>PRIORITY</span>
+    <span class="lbl">蓝海赛道 · 二 <span class="chip gray">★</span></span>
+    <h2>ASCII 终端风 AI 哲思</h2>
+    <p>现成样片今天就能测，话题热度高（X 7 天 1093 帖），画风无人做。</p>
+    <span class="refs">风格：ASCII / CRT 终端【短】 · 现成样片《AI 会有意识吗》63 秒</span>
+  </li>
+  <li class="tp">
+    <span class="rk"><b>03</b>PRIORITY</span>
+    <span class="lbl">蓝海赛道 · 三</span>
+    <h2>单一食材营养科普</h2>
+    <p>YouTube 搜索型长尾，38 条视频就有 4.72 万订阅（原帖），还能和带货打通。</p>
+    <span class="refs">风格：玻璃质感产品 + 数据叙事【短】 · 需新做样片</span>
+  </li>
+</ol>
+
+<div class="lim" style="margin-top:16px">
+  <b>可直接用样片测号</b>
+  <ul>
+    <li>现成样片：【艺】火箭发动机拆解 58 秒、RAG 白板科普 60 秒、小忍者艺术史速通 72 秒；【短】蜡笔绘本 4 部、ASCII / CRT《AI 会有意识吗》63 秒。</li>
+    <li>哲思终端（《AI 会有意识吗》）、硬核拆解（火箭发动机）、AI 科普（RAG 白板）、艺术史速通（小忍者）、蜡笔睡前故事 / 英语绘本（4 部蜡笔片）。</li>
+  </ul>
+</div>
+
+<!-- ============ 二、21 条赛道 → 风格匹配 ============ -->
+<h2 class="sec"><span class="secnum">贰</span>21 条赛道 → 风格匹配</h2>
+<p class="secn">来源标注：<span class="chip yi">艺</span> = 艺术动画解说机器人　<span class="chip duan">短</span> = 短片制作机器人　<span class="chip gray">备选</span> = 次选方案　<span class="chip gray">★</span> = 有现成样片可直接测号</p>
+<ol class="cases">
+
+  <li class="cd">
+    <div class="ch"><span>#01</span><span><span class="chip yi">艺</span> <span class="chip gray">★</span></span></div>
+    <h3>AI 科普</h3>
+    <p class="sty">白板手绘 / 3Blue1Brown <span class="chip yi">艺</span>（样片：RAG 白板、火箭发动机）</p>
+    <p class="rsn"><em>理由</em>已有两条样片，可当天发。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#02</span><span><span class="chip duan">短</span> <span class="chip gray">★</span></span></div>
+    <h3>AI 儿童英语绘本</h3>
+    <p class="sty">蜡笔儿童绘本 <span class="chip duan">短</span></p>
+    <p class="rsn"><em>理由</em>用户偏好，4 部样片可改成双语版。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#03</span><span><span class="chip duan">短</span> <span class="chip gray">★</span></span></div>
+    <h3>英语绘本新号</h3>
+    <p class="sty">蜡笔绘本 <span class="chip duan">短</span><br><span class="alt">备选：绘本讲故事 <span class="chip yi">艺</span></span></p>
+    <p class="rsn"><em>理由</em>同上，新号对标验证「39 条 6.4 万」路径。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#04</span><span><span class="chip duan">短</span> <span class="chip yi">艺</span></span></div>
+    <h3>视频号少儿英语启蒙</h3>
+    <p class="sty">蜡笔绘本 + 动态文字排版（单词弹出）<span class="chip duan">短</span> / <span class="chip yi">艺</span></p>
+    <p class="rsn"><em>理由</em>视频号家长多，单词卡式动效适合跟读。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#05</span><span class="chip yi">艺</span></div>
+    <h3>AI 古诗词动画</h3>
+    <p class="sty">中国水墨 / 敦煌 + 长卷穿越 <span class="chip yi">艺</span></p>
+    <p class="rsn"><em>理由</em>诗意靠长卷推镜。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#06</span><span class="chip yi">艺</span></div>
+    <h3>AI 脱口秀</h3>
+    <p class="sty">动态文字排版 + 成人动画 <span class="chip yi">艺</span></p>
+    <p class="rsn"><em>理由</em>笑点靠字幕节奏。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#07</span><span><span class="chip yi">艺</span></span></div>
+    <h3>聊斋水墨志怪</h3>
+    <p class="sty">中国水墨 + 角色闯关剧情 <span class="chip yi">艺</span><br><span class="alt">备选：中国水墨 <span class="chip duan">短</span></span></p>
+    <p class="rsn"><em>理由</em>夜景、烛火、鬼影正是光影强、角色少的强项。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#08</span><span class="chip duan">短</span></div>
+    <h3>AI 传统寓言</h3>
+    <p class="sty">皮影戏 / 红色窗花剪纸 <span class="chip duan">短</span><br><span class="alt">备选：绘本讲故事 <span class="chip yi">艺</span></span></p>
+    <p class="rsn"><em>理由</em>寓言角色少、动物多，剪纸皮影有国风辨识度。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#09</span><span><span class="chip yi">艺</span> <span class="chip duan">短</span></span></div>
+    <h3>抽象 3D 动画教学</h3>
+    <p class="sty">光追 3D <span class="chip yi">艺</span> + 实机录屏 <span class="chip duan">短</span></p>
+    <p class="rsn"><em>理由</em>教学要展示成品和过程。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#10</span><span><span class="chip duan">短</span> <span class="chip yi">艺</span></span></div>
+    <h3>魔性抽象角色</h3>
+    <p class="sty">50 年代扁平卡通 / 橡皮管卡通 <span class="chip duan">短</span><br><span class="alt">备选：卡比萌系 <span class="chip yi">艺</span></span></p>
+    <p class="rsn"><em>理由</em>魔性靠夸张造型和弹跳动作。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#11</span><span class="chip duan">短</span></div>
+    <h3>抗炎减脂带货</h3>
+    <p class="sty">等距信息图 / 玻璃质感产品 <span class="chip duan">短</span></p>
+    <p class="rsn"><em>理由</em>食材和成分图解清楚，利于挂车。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#12</span><span class="chip yi">艺</span></div>
+    <h3>Anatomy Skill 一句话出科普片</h3>
+    <p class="sty">白板 / Kurzgesagt 扁平 <span class="chip yi">艺</span></p>
+    <p class="rsn"><em>理由</em>这是工具，可对照我们的科普管线，不必单独做号。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#13</span><span class="chip yi">艺</span></div>
+    <h3>Codex 技能包批量做爆款</h3>
+    <p class="sty">动态文字排版 <span class="chip yi">艺</span>（Vibe 动效竖屏）</p>
+    <p class="rsn"><em>理由</em>代码批量出片，和我们流程一样。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#14</span><span><span class="chip duan">短</span> <span class="chip gray">★</span></span></div>
+    <h3>手绘多画风睡前故事</h3>
+    <p class="sty">蜡笔 / 水彩 / 钢笔淡彩 <span class="chip duan">短</span></p>
+    <p class="rsn"><em>理由</em>夜景少角色，已有样片。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#15</span><span class="chip yi">艺</span></div>
+    <h3>YouTube 无脸长视频</h3>
+    <p class="sty">Kurzgesagt 扁平 / Vox 拼贴 <span class="chip yi">艺</span></p>
+    <p class="rsn"><em>理由</em>无脸解说核心形式。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#16</span><span class="chip duan">短</span></div>
+    <h3>西部故事</h3>
+    <p class="sty">木刻 / 丝印海报 <span class="chip duan">短</span></p>
+    <p class="rsn"><em>理由</em>粗犷荒野感。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#17</span><span><span class="chip yi">艺</span> <span class="chip gray">★</span></span></div>
+    <h3>古文明纪录片</h3>
+    <p class="sty">古埃及壁画 / 马赛克长卷 <span class="chip yi">艺</span>（小忍者速通可改编）</p>
+    <p class="rsn"><em>理由</em>用文明的艺术讲文明。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#18</span><span class="chip duan">短</span></div>
+    <h3>单一食材营养科普</h3>
+    <p class="sty">玻璃质感产品 + 数据叙事 <span class="chip duan">短</span></p>
+    <p class="rsn"><em>理由</em>一种食材一条，画面干净统一。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#19</span><span class="chip yi">艺</span></div>
+    <h3>全 AI 无脸频道</h3>
+    <p class="sty">视选题而定，推荐 Kurzgesagt 扁平 <span class="chip yi">艺</span></p>
+    <p class="rsn"><em>理由</em>属于商业模式，不是题材。</p>
+  </li>
+
+  <li class="cd">
+    <div class="ch"><span>#20</span><span><span class="chip duan">短</span> <span class="chip yi">艺</span></span></div>
+    <h3>家居技巧模板频道</h3>
+    <p class="sty">等距信息图 / 白板 <span class="chip duan">短</span> / <span class="chip yi">艺</span></p>
+    <p class="rsn"><em>理由</em>步骤图解，模板化量产。</p>
+  </li>
+
+  <li class="cd risk">
+    <div class="ch"><span>#21</span><span class="tagline-risk">高风险</span></div>
+    <h3>AI 健身美女 IG</h3>
+    <p class="sty">高风险，略过</p>
+    <p class="rsn"><em>理由</em>虚拟人设、擦边、导流风险高。</p>
+  </li>
+
+</ol>
+
+<!-- ============ 三、与昨天重合方向的新证据 ============ -->
+<h2 class="sec"><span class="secnum">叁</span>与昨天重合方向的新证据</h2>
+<div class="lim">
+  <ul style="margin-top:0">
+    <li><b>睡前故事</b>：今天的原帖（<a class="src" href="https://x.com/Rainskynb66/status/2107309617554559261" target="_blank" rel="noopener">X<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>）是方法分享，作者称一段中文故事可选 20 种画风；该帖曝光 255、点赞 9（X 接口）。新的账号数据：<span class="nf">未查到</span>。</li>
+    <li><b>古文 / 人文</b>：课本古文 AI 短剧账号 29 条作品涨粉 80 万（<a class="src" href="https://www.woshipm.com/ai/6274016.html" target="_blank" rel="noopener">人人都是产品经理<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>，作者自述性质）。</li>
+  </ul>
+</div>
+
+<!-- ============ 四、新蓝海赛道 ============ -->
+<h2 class="sec"><span class="secnum">肆</span>新蓝海赛道 · 7 个</h2>
+<ol class="blues">
+
+  <li class="bo">
+    <span class="no">BLUE OCEAN · 01</span>
+    <h3>聊斋水墨志怪动画</h3>
+    <dl class="kv">
+      <div><dt>定位</dt><dd>固定一个国风 IP 角色，每集讲一篇聊斋，水墨工笔统一视觉。</dd></div>
+      <div><dt>风格</dt><dd>中国水墨 + 角色闯关剧情 <span class="chip yi">艺</span>；备选：中国水墨 <span class="chip duan">短</span>。</dd></div>
+      <div class="ev"><dt>证据</dt><dd>原帖称「古卷残灯」13 条作品涨粉 <span class="ep">59.4 万</span>，单条《祸女》播放破百万（<a class="src" href="https://x.com/linmuranut/status/2103790379694960661" target="_blank" rel="noopener">X 原帖<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>，帖子本身曝光 <span class="ep">1870</span>）；AI 志怪短剧《非妖哉》两集获赞超 <span class="ep">400 万</span>，账号涨到近 <span class="ep">50 万粉</span>（<a class="src" href="https://user.guancha.cn/main/content?id=1726239&amp;s=fwzwyzzwzbt" target="_blank" rel="noopener">观察者网风闻<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>）；国风动画「阿盐」抖音半年涨粉 <span class="ep">81 万</span>（<a class="src" href="https://m.36kr.com/p/3893827784194564" target="_blank" rel="noopener">36 氪 / 新榜<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>）。同类账号数量：<span class="nf">未查到</span>。</dd></div>
+      <div><dt>为什么蓝海</dt><dd>聊斋有近 500 篇故事，题材取之不尽；多数 AI 聊斋用视频模型做古偶写实，代码生成的水墨风辨识度更高。但同一来源显示 2026 上半年抖音新增 AI 微短剧 <span class="ep">22.19 万部</span>、爆款率 <span class="ep">0.47%</span>，泛漫剧很卷，必须靠统一画风取胜。</dd></div>
+      <div><dt>变现</dt><dd>品牌商单（原帖称排期饱满，未核实）、抖音中视频、国风文创。</dd></div>
+      <div class="boInk"><dt>首 3 条</dt><dd>《画皮》《聂小倩》《崂山道士》。</dd></div>
+    </dl>
+  </li>
+
+  <li class="bo">
+    <span class="no">BLUE OCEAN · 02</span>
+    <h3>单一食材营养科普（YouTube 英文）</h3>
+    <dl class="kv">
+      <div><dt>定位</dt><dd>一条只讲一种食材，吃了身体会怎样。</dd></div>
+      <div><dt>风格</dt><dd>玻璃质感产品 + 数据叙事 <span class="chip duan">短</span>；备选：等距信息图 <span class="chip duan">短</span>。</dd></div>
+      <div class="ev"><dt>证据</dt><dd>原帖称该频道 <span class="ep">38 个视频 4.72 万订阅</span>，三文鱼 <span class="ep">77.7 万</span>、西兰花 <span class="ep">51.5 万</span>、鸡蛋 <span class="ep">36.7 万</span> 播放（<a class="src" href="https://x.com/Mdbilal75/status/2104088340442079431" target="_blank" rel="noopener">X 原帖<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>，帖子 <span class="ep">18 个收藏</span>）。具体频道名、中文同类账号：<span class="nf">未查到</span>。</dd></div>
+      <div><dt>为什么蓝海</dt><dd>选题是搜索型长尾（「what happens if you eat eggs every day」），视频少就能涨订阅；我们的玻璃质感和数据图表正好适合。</dd></div>
+      <div><dt>变现</dt><dd>YouTube 广告、食材电商联盟、和第 11 条「抗炎减脂」带货打通。</dd></div>
+      <div class="boInk"><dt>首 3 条</dt><dd>《每天吃一个鸡蛋会怎样》《三文鱼的 7 个变化》《西兰花为什么被叫做超级食物》。</dd></div>
+    </dl>
+  </li>
+
+  <li class="bo">
+    <span class="no">BLUE OCEAN · 03</span>
+    <h3>魔性 AI 生物伪纪录片</h3>
+    <dl class="kv">
+      <div><dt>定位</dt><dd>自创一只魔性生物，用动物纪录片口吻拍它的生活。</dd></div>
+      <div><dt>风格</dt><dd>50 年代扁平卡通 / 橡皮管卡通 <span class="chip duan">短</span>；卡比萌系 <span class="chip yi">艺</span>。</dd></div>
+      <div class="ev"><dt>证据</dt><dd>#妙脆角小猫 抖音累计播放超 <span class="ep">21 亿</span>、全网超 <span class="ep">22 亿</span>；「咪的妙脆角」<span class="ep">268.6 万粉</span>，星图植入报价 <span class="ep">6.8 万元</span>；「多影织」约 <span class="ep">21.5 万粉</span>，植入报价 <span class="ep">2 万元</span>（<a class="src" href="https://www.newrank.cn/article/detail/34770?tag=AI" target="_blank" rel="noopener">新榜<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>）。</dd></div>
+      <div><dt>为什么蓝海</dt><dd>热门生物会轮换，自创原创生物没有 IP 竞争；卡通扁平风区别于写实 AI。缺点是爆不爆不确定。</dd></div>
+      <div><dt>变现</dt><dd>星图商单、表情包和周边。</dd></div>
+      <div class="boInk"><dt>首 3 条</dt><dd>《野生 XX 的一天》《XX 遇到天敌》《人类第一次驯化 XX》。</dd></div>
+    </dl>
+  </li>
+
+  <li class="bo">
+    <span class="no">BLUE OCEAN · 04 <span class="chip gray">★</span></span>
+    <h3>ASCII 终端风 AI 哲思</h3>
+    <dl class="kv">
+      <div><dt>定位</dt><dd>用终端日志的形式，让 AI 自问自答意识、记忆、死亡。</dd></div>
+      <div><dt>风格</dt><dd>ASCII / CRT 终端 <span class="chip duan">短</span>，现成样片《AI 会有意识吗》<span class="ep">63 秒</span>。</dd></div>
+      <div class="ev"><dt>证据</dt><dd>X 上近 7 天「AI consciousness / is AI conscious」相关帖 <span class="ep">1093 条</span>（X 接口统计）；B 站《人类第一次「上传」了一个大脑》<span class="ep">89.8 万播放</span>（<a class="src" href="https://www.bilibili.com/video/BV1onZWBuEqs/" target="_blank" rel="noopener">B 站相关列表<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>）；B 站已有 AI 意识论坛类 15 到 20 分钟长视频（<a class="src" href="https://www.bilibili.com/video/BV1m76sBEEnE/" target="_blank" rel="noopener">B 站<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>）。终端风同类账号：<span class="nf">未查到</span>。</dd></div>
+      <div><dt>为什么蓝海</dt><dd>话题热，但现有内容多是真人口播或写实画面，终端风格几乎没人做，视觉辨识度高。</dd></div>
+      <div><dt>变现</dt><dd>科技类商单、知识付费导流、B 站充电。</dd></div>
+      <div class="boInk"><dt>首 3 条</dt><dd>《AI 会有意识吗》（现成）、《如果 AI 没有记忆，它会怕死吗》《25 个 AI 自己组成了社会》。</dd></div>
+    </dl>
+  </li>
+
+  <li class="bo">
+    <span class="no">BLUE OCEAN · 05</span>
+    <h3>Vibe 动效金句 / 知识卡片竖屏</h3>
+    <dl class="kv">
+      <div><dt>定位</dt><dd>一句扎心观点或一个冷知识，纯文字动效 30 秒。</dd></div>
+      <div><dt>风格</dt><dd>动态文字排版 <span class="chip yi">艺</span> / 瑞士动态排版 <span class="chip duan">短</span>。</dd></div>
+      <div class="ev"><dt>证据</dt><dd>开源项目 KineCard 专做 9:16 竖屏动效卡片（<a class="src" href="https://github.com/SuperMarioYL/kinecard" target="_blank" rel="noopener">GitHub<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>），说明需求存在；同类账号粉丝和播放数：<span class="nf">未查到</span>。</dd></div>
+      <div><dt>为什么列入</dt><dd>成本最低、可日更多条；但门槛低，竞争可能很大，不算真蓝海，适合做辅助号。</dd></div>
+      <div><dt>变现</dt><dd>中视频收益、书单 / 课程带货。</dd></div>
+      <div class="boInk"><dt>首 3 条</dt><dd>《成年人最贵的不是钱》《3 个让你一秒清醒的心理学效应》《AI 时代最不值钱的能力》。</dd></div>
+    </dl>
+  </li>
+
+  <li class="bo">
+    <span class="no">BLUE OCEAN · 06</span>
+    <h3>寓言 / 成语剪纸动画（家长向）</h3>
+    <dl class="kv">
+      <div><dt>定位</dt><dd>2 分钟一个寓言，剪纸皮影风，结尾一句道理。</dd></div>
+      <div><dt>风格</dt><dd>红色窗花剪纸 / 皮影戏 <span class="chip duan">短</span>。</dd></div>
+      <div class="ev"><dt>证据</dt><dd>AI 成语寓言账号 10 天涨粉 <span class="ep">9 千</span>，<span class="ep">1000 粉</span>以上可接小红书蒲公英商单（<a class="src" href="https://www.sohu.com/a/790058116_99954671" target="_blank" rel="noopener">搜狐，2024 年<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>）。剪纸风同类账号：<span class="nf">未查到</span>。</dd></div>
+      <div><dt>为什么蓝海</dt><dd>寓言账号多用通用 AI 画风，剪纸是非遗风格，差异化明显，家长粉价值高。</dd></div>
+      <div><dt>变现</dt><dd>小红书蒲公英、绘本带货、卖号。</dd></div>
+      <div class="boInk"><dt>首 3 条</dt><dd>《守株待兔》《狐假虎威》《画蛇添足》。</dd></div>
+    </dl>
+  </li>
+
+  <li class="bo">
+    <span class="no">BLUE OCEAN · 07 <span class="chip gray">★</span></span>
+    <h3>硬核工程拆解</h3>
+    <dl class="kv">
+      <div><dt>定位</dt><dd>60 秒看懂一个机器怎么工作。</dd></div>
+      <div><dt>风格</dt><dd>3Blue1Brown / Keynote 演示 <span class="chip yi">艺</span>，现成样片火箭发动机拆解 <span class="ep">58 秒</span>。</dd></div>
+      <div class="ev"><dt>证据</dt><dd><span class="nf">未查到</span>可靠同类账号数据。</dd></div>
+      <div><dt>为什么列入</dt><dd>样片现成，测号成本几乎为零；数据先用测号来补。</dd></div>
+      <div><dt>变现</dt><dd>科技商单、教育导流。</dd></div>
+      <div class="boInk"><dt>首 3 条</dt><dd>《火箭发动机》（现成）、《原子钟为什么那么准》《电梯为什么掉不下去》。</dd></div>
+    </dl>
+  </li>
+
+</ol>
+
+<!-- ============ 五、数据说明 ============ -->
+<h2 class="sec"><span class="secnum">伍</span>数据说明与局限</h2>
+<div class="lim">
+  <b>数据口径</b>
+  <ul>
+    <li>21 条赛道数据为原帖作者自述，<b>未核实</b>。</li>
+    <li>本文「证据」只列本次实际查到的数字，附来源；查不到写「<span class="nf">未查到</span>」。</li>
+    <li>机器人简称：<span class="chip yi">艺</span> = 艺术动画解说，<span class="chip duan">短</span> = 短片制作；<span class="chip gray">★</span> = 有现成样片可直接测号。</li>
+  </ul>
+  <b style="display:block;margin-top:14px">局限</b>
+  <ul>
+    <li>抖音、小红书、视频号后台数据无法直接抓取，竞争账号数量大多未查到。</li>
+    <li>三条 X 原帖的数字均为作者自述；X 统计只代表发帖热度。</li>
+  </ul>
+</div>
+
+</main>
+
+<footer class="foot">
+  <span>赛道 × 风格匹配分析 · 2026-10-16</span>
+  <span>内容仅来自 src-2026-10-16.md · 21 条匹配 + 7 个蓝海 + 前 3 优先级</span>
+</footer>
+
+</div>
+</body>
+</html>
